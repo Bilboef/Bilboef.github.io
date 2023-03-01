@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
-    <title>Bootstrap Example 2</title>
+    <title>NemSortering</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon for logo in tabs etc. -->
+    <link rel="icon" href="/image/Icon-2.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/style/my-style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -12,43 +14,65 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar bg-dark navbar-dark">
+    <nav class="navbar bg-dark navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
                 <img src="/image/Icon-2.png" width="30" height="30" alt="">
-                skraldesortering (København)
+                NemSortering
             </a>
         </div>
     </nav>
     <!-- Page Content -->
     <div class="container" style="max-width: 920px">
-        <div class="card my-1 shadow-lg">
-            <div class="card-header p-0"">
-                <img class="card-img-top"  src="/image/Papir.v2.jpg">
-                
-            </div>
-            <div class="card-body p-1"></div>
-            <img class="card-img-top" style="background-color: #0182BF;" src="/image/Papir.png">
 
-            <div class="card-body p-1">
-               
-                    <ul>
-                        <li>Aviser</li>
-                        <li>Breve</li>
-                        <li>Reklamer</li>
-                        <li>farvet papir</li>
-                        <li>Lorem ipsum</li>
-                    </ul>
-                   
+        <!-- Top -->
+        <div class="card my-2 ">
+            <div class="row g-0 ">
+                <div class="col-md-4 d-flex p-0 align-items-center " style="background-color: #0182BF;">
+                    <img src="image/Papir.v2.jpg" class="img-fluid rounded-start" style="max-width: 120px" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Husk ...</h5>
+                        <p class="card-text">Papir skal være rent og tørt. Er det vådt eller snavset, så skal det sorteres som restaffald. Clips og tape må gerne sidde på.</p>
+
+                    </div>
+                </div>
             </div>
-            <div class="card-footer p-0">
-              
+        </div>
+        <!-- picture and examples -->
+        <div class="card my-2">
+            <div class="row g-0">
+                <div class="col-md-4 d-flex align-items-center " style="background-color: #e5eae8;">
+                    <img src="image/Papir.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Dette skal sorters som Papir</h5>
+                        <p class="card-text">
+                            https://affald.kk.dk/affaldsfraktion/papir (remove)
+                            <ul>
+                                <li>Aviser og ugeblade</li>
+                                <li>Reklamer og magasiner</li>
+                                <li>Kuverter og rudekuverter</li>
+                                <li>Printerpapir</li>
+                                <li>Gavepapir uden glimmer</li>
+                            </ul>
+                        </p>
+                        <h5 class="card-title">Dette skal <b>ikke</b> sorters</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li>Karton og pap</li>
+                                <li>Køkkenrulle</li>
+                                <li>Brunt papir og brune papirsposer. Det skal i pap</li>
+                                <li>Papir med madrester og fedtafvisende belægning. Det skal i restaffald</li>
+                                <li>Gavebånd og sløjfer</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
-
 </body>
-
 </html>
